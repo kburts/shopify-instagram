@@ -103,3 +103,6 @@ CELERY_RESULT_BACKEND = 'amqp'
 CELERY_TASK_RESULT_EXPIRES = 14400
 
 CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+### Instagram Settings ###
+INSTAGRAM_ID = local_settings.INSTAGRAM_ID

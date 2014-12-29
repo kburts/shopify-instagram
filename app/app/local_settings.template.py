@@ -19,3 +19,5 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
+
+INSTAGRAM_ID = 'my client id http://instagram.com/developer/clients/manage/'
