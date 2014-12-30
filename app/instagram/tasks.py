@@ -13,7 +13,8 @@ def task():
 
 @app.task
 def create_gallery(tag, customer):
-    g = Gallery(tag=tag, owner=customer).save()
+    gallery = Gallery(tag=tag, owner=customer)
+    gallery.save()
 
     ig_id = settings.INSTAGRAM_ID
     tag_url = "https://api.instagram.com/v1/tags/"\
@@ -22,4 +23,8 @@ def create_gallery(tag, customer):
 
     req = requests.get(tag_url)
     #print req.text
-    return req.text
+    data = req.json()['data']
+    for item in data:
+        Photo(ig_url=item['link'],
+              photo_url=item['images']['low_resolution']['url'],
+              gallery=gallery).save()

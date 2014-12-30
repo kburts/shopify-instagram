@@ -8,7 +8,7 @@ class Customer(models.Model):
         return self.user.username
 
 class Gallery(models.Model):
-    tag = models.CharField(max_length=100)
+    tag = models.CharField(max_length=100, unique=True)
     owner = models.ForeignKey(Customer, related_name='galleries')
 
     def __unicode__(self):

@@ -13,3 +13,9 @@ class GalleryList(generics.ListAPIView):
     serializer_class = GallerySerializer
 
     permission_classes = (permissions.AllowAny,)
+
+class GalleryDetail(generics.RetrieveAPIView):
+    queryset = Gallery.objects.all()
+    serializer_class = GallerySerializer
+
+    lookup_field = 'tag'
