@@ -45,11 +45,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/instagram/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="7" selection-start="1788" selection-end="1788" vertical-scroll-proportion="0.8819444" vertical-offset="105" max-vertical-offset="969">
-              <folding />
+            <state line="36" column="35" selection-start="1026" selection-end="1026" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="969">
+              <folding>
+                <marker date="1420155043750" expanded="true" signature="857:1788" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -66,9 +68,11 @@
       <file leaf-file-name="serializers.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/instagram/serializers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="0" selection-start="614" selection-end="614" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
+            <state line="26" column="25" selection-start="740" selection-end="740" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
               <folding>
                 <element signature="e#0#43#0" expanded="true" />
+                <marker date="1420155492121" expanded="true" signature="428:612" placeholder="..." />
+                <marker date="1420155492121" expanded="true" signature="543:612" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -86,10 +90,19 @@
       <file leaf-file-name="tasks.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/instagram/tasks.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="9" selection-start="255" selection-end="255" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
+            <state line="32" column="0" selection-start="817" selection-end="817" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="shopify-instagram.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/shopify-instagram.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="8" selection-start="77" selection-end="77" vertical-scroll-proportion="0.0787037" vertical-offset="0" max-vertical-offset="864">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -114,15 +127,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="local_settings.template.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/app/local_settings.template.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="69" selection-start="442" selection-end="442" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindManager">
@@ -141,12 +145,13 @@
         <option value="$PROJECT_DIR$/app/app/local_settings.py" />
         <option value="$PROJECT_DIR$/app/app/local_settings.template.py" />
         <option value="$PROJECT_DIR$/app/app/settings.py" />
-        <option value="$PROJECT_DIR$/app/instagram/tasks.py" />
         <option value="$PROJECT_DIR$/app/app/permissions.py" />
         <option value="$PROJECT_DIR$/app/instagram/urls.py" />
         <option value="$PROJECT_DIR$/app/instagram/models.py" />
         <option value="$PROJECT_DIR$/app/instagram/views.py" />
         <option value="$PROJECT_DIR$/app/instagram/serializers.py" />
+        <option value="$PROJECT_DIR$/app/instagram/tasks.py" />
+        <option value="$PROJECT_DIR$/shopify-instagram.js" />
       </list>
     </option>
   </component>
@@ -427,6 +432,9 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.js" />
+  </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
       <collection />
@@ -529,15 +537,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/instagram/tasks.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="9" selection-start="255" selection-end="255" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/instagram/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="0" selection-start="379" selection-end="379" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561">
@@ -554,18 +553,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/instagram/serializers.py">
+    <entry file="file://$PROJECT_DIR$/app/instagram/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="0" selection-start="614" selection-end="614" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
+        <state line="36" column="35" selection-start="1026" selection-end="1026" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="969">
           <folding>
-            <element signature="e#0#43#0" expanded="true" />
+            <marker date="1420155043750" expanded="true" signature="857:1788" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/instagram/views.py">
+    <entry file="file://$PROJECT_DIR$/app/instagram/serializers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="7" selection-start="1788" selection-end="1788" vertical-scroll-proportion="0.8819444" vertical-offset="105" max-vertical-offset="969">
+        <state line="26" column="25" selection-start="740" selection-end="740" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+            <marker date="1420155492121" expanded="true" signature="428:612" placeholder="..." />
+            <marker date="1420155492121" expanded="true" signature="543:612" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/instagram/tasks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="0" selection-start="817" selection-end="817" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shopify-instagram.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="8" selection-start="77" selection-end="77" vertical-scroll-proportion="0.0787037" vertical-offset="0" max-vertical-offset="864">
           <folding />
         </state>
       </provider>

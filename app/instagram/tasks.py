@@ -24,7 +24,9 @@ def create_gallery(tag, customer):
     req = requests.get(tag_url)
     #print req.text
     data = req.json()['data']
+    photos = []
     for item in data:
-        Photo(ig_url=item['link'],
+        photos.append(Photo(ig_url=item['link'],
               photo_url=item['images']['low_resolution']['url'],
-              gallery=gallery).save()
+              gallery=gallery))
+    Photo.objects.bulk_create(photos)
