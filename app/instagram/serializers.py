@@ -14,10 +14,14 @@ class PhotoSerializer(serializers.ModelSerializer):
 
 
 class GallerySerializer(serializers.ModelSerializer):
-    queryset = Photo.objects.all().filter(blocked=True)
-    photos = PhotoSerializer(queryset, many=True)
-    owner = serializers.StringRelatedField()
-    #photos = serializers.Serializer(Photo.objects.all())
+    photos = PhotoSerializer(many=True)
+    owner = serializers.StringRelatedField(read_only=True)
     class Meta:
         model = Gallery
         fields = ('tag', 'owner', 'photos',)
+
+
+class GalleryCreateSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Gallery
+        fields = ('tag',)
