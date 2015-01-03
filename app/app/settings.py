@@ -44,6 +44,7 @@ THIRD_PARTY_APPS = (
     'django_extensions',
     'rest_framework',
     'djcelery',
+    'corsheaders',
 )
 
 MY_APPS = (
@@ -56,6 +57,7 @@ INSTALLED_APPS = (
 
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -106,3 +108,6 @@ CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
 
 ### Instagram Settings ###
 INSTAGRAM_ID = local_settings.INSTAGRAM_ID
+
+### Cors middleware settings ###
+CORS_ORIGIN_ALLOW_ALL = True
