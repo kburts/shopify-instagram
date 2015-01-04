@@ -1,3 +1,4 @@
+import re
 import requests
 
 from django.conf import settings
@@ -26,7 +27,10 @@ def create_gallery(tag, customer):
     data = req.json()['data']
     photos = []
     for item in data:
-        photos.append(Photo(ig_url=item['link'],
-              photo_url=item['images']['low_resolution']['url'],
-              gallery=gallery))
+        url = re.sub('http://', 'https://', item['link'])
+        img = re.sub('http://', 'https://', item['images']['low_resolution']['url'])
+        photos.append(Photo(
+            ig_url=url,
+            photo_url=img,
+            gallery=gallery))
     Photo.objects.bulk_create(photos)
